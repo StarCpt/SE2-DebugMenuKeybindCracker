@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Hashing" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SharpDX.DirectInput">
+      <HintPath>E:\SteamLibrary\steamapps\common\SpaceEngineers2\Game2\SharpDX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Client">
+      <HintPath>E:\SteamLibrary\steamapps\common\SpaceEngineers2\Game2\VRage.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Core">
+      <HintPath>E:\SteamLibrary\steamapps\common\SpaceEngineers2\Game2\VRage.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library">
+      <HintPath>E:\SteamLibrary\steamapps\common\SpaceEngineers2\Game2\VRage.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Platform.Windows">
+      <HintPath>E:\SteamLibrary\steamapps\common\SpaceEngineers2\Game2\VRage.Platform.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
