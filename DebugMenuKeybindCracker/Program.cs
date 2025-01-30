@@ -271,10 +271,7 @@ namespace DebugMenuKeybindCracker
             {
                 while (true)
                 {
-                    for (int i = 0; i < k; i++)
-                    {
-                        sortedInputs[i] = keysPtr[indices[i]];
-                    }
+                    sortedInputs[k - 1] = keysPtr[indices[k - 1]];
 
                     processed++;
                     ulong hash = HashInputFast(sortedInputs, k);
@@ -304,6 +301,11 @@ namespace DebugMenuKeybindCracker
                         if (indices[0] >= _keys.Length)
                         {
                             break;
+                        }
+
+                        for (int i = 0; i < k - 1; i++)
+                        {
+                            sortedInputs[i] = keysPtr[indices[i]];
                         }
                     }
                 }
